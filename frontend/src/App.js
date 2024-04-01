@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import './styles/app.css';
+import pony from './images/pony.jpg'
 
 const App = () => {
   // Define state to store fetched data
@@ -36,6 +38,7 @@ const App = () => {
         <div>
           <h2>Fetched Data:</h2>
           <pre>{JSON.stringify(data, null, 2)}</pre>
+          <img src={pony} className="logo" alt="Pony"/>
         </div>
       )}
     </div>
